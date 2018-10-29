@@ -7,7 +7,9 @@ html(lang="ja")
     h1 秘密の匿名掲示板
     h2 新規投稿
     form(method="post" action="/posts")
+      //-  action属性: データの送信先を指定
       div
         textarea(name="content" cols=40 rows=4)
+        //- name属性: この値が送られるデータ(key=value形式)のkeyとして設定される
       div
         button(type="submit") 投稿
